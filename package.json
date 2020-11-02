@@ -157,7 +157,9 @@
     "type": "git",
     "url": "git+https://github.com/bbarello/tech_employee_tracker.git"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -26,7 +26,7 @@ inquirer, and MySQL.
 
 ```
 ## Staging Link:
-https://bbarello.github.io/tech_employee_tracker/
+https://blooming-shelf-77865.herokuapp.com/
 
 ## Screenshot:
 
