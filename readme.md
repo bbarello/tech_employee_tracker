@@ -30,5 +30,5 @@ https://blooming-shelf-77865.herokuapp.com/
 
 ## Screenshot:
 
-![Mysql Employee Tracker](emloyee-tracker.gif)
+![Mysql Employee Tracker](employee-tracker.gif)
 
