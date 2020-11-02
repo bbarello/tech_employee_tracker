@@ -20,6 +20,7 @@ inquirer, and MySQL.
 - Console Table
 - Javascript
 - MySQL
+- Nodemon
 - Node
 - Heroku
 
