@@ -13,33 +13,34 @@ const connection = mysql.createConnection({
     database:'employeeDB'
   })
 
+
+  // call on the function that displays main menu
+start()
+function start() {
+  console.log("Welcome to the Employee Directory!");
+  mainMenu();
+}
+
   // questions prompt
   connection.connect(async function(err) {
     if (err) throw err;
     console.log("Oh no something went wrong!");
-  
-    const {start} = await inquirer.prompt({
+
+  // prompts user between 7 items
+    const mainMenu = await inquirer.prompt([
+      {
       type: "list",
       message: "What do you want to do?",
-      name: "start",
-      choices: [
-        {
-          name: "Search by artist",
-          value: findByArtist,
-        },
-        {
-          name: "See artists with 10 or more songs",
-          value: findTopArtists,
-        },
-        {
-          name: "View a range of positions",
-          value: findByPosition,
-        },
-        {
-          name: "Search by song title",
-          value: findByTitle,
-        }
-      ]
+      name: "menuChoice",
+      choices: ["View Employees", "View Departments", "View Employee Role", "Add An Employee", "Add Department", "Add Employee Role", "Update Employee Role"
+    ]
+  }
+]).then(function (userChoice) {
+  switch (userChoice.menuChoice){
+
+  }
+})
+
     });
-    start();
+    mainMenu();
   });
